@@ -4,9 +4,9 @@ Index.html
 
 `<link rel="varibales" href="%PUBLIC_URL%/helper/varibales.json" />`
 
-```
-Create function with axios to read file
+Create function with axios to read file on main component App.js
 
+```
     const handleClickTest = () => {
         debugger;
         axios.get('./helper/varibales.json') // JSON File Path
