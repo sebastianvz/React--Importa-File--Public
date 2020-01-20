@@ -1,5 +1,31 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Index.html 
+
+`<link rel="varibales" href="%PUBLIC_URL%/helper/varibales.json" />`
+
+```
+Create function with axios to read file
+
+    const handleClickTest = () => {
+        debugger;
+        axios.get('./helper/varibales.json') // JSON File Path
+        .then( response => {
+            debugger;
+            let test =response.data.variable 
+            setTest2(test);
+            console.log(test);
+            console.log(test2);
+            //response.data.variable
+            
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    }
+```
+
+
 ## Available Scripts
 
 In the project directory, you can run:
