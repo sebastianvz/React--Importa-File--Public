@@ -7,6 +7,7 @@ import axios from 'axios';
 function App() {
     const [count, setCount] = useState(0);
     const [test2, setTest2] = useState('S'); 
+    const [color, setColor] = useState('App-header'); 
 
 
     const handleClickTest = () => {
@@ -31,9 +32,14 @@ function App() {
         console.log(test2);
     }
 
+    const handleClickColor = () => {
+        debugger;
+        setColor('Yellow');
+    }
+
   return (
     <div className="App">
-      <header className="App-header">
+      <header className={color}>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -52,6 +58,12 @@ function App() {
             <p>Que pasa con: {test2} de verdad.</p>
                 <button onClick={handleClickTest}>
                 Click 2
+                </button>
+        </div>
+        <div>
+            <p>Que pasa con: {color} de verdad.</p>
+                <button onClick={handleClickColor}>
+                Click 3
                 </button>
         </div>
       </header>
